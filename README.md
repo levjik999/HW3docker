@@ -20,6 +20,7 @@ HW3Docker/
 ```
 ## Быстрый старт
 ```
+chmod +x run.sh
 ./run.sh build_generator
 ./run.sh run_generator
 ./run.sh build_reporter
