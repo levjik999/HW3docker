@@ -4,11 +4,16 @@
 
 ## Структура
 ```
-project/
-├── data/          # сюда пишутся data.csv и report.html
-├── local_data/    # для локальной отладки генератора
-├── generator/     # Python-скрипт + Dockerfile
-├── reporter/      # JS-скрипт + package.json + Dockerfile
+HW3Docker/
+├── data/             # сюда пишутся data.csv и report.html
+├── local_data/       # для локальной отладки генератора
+├── generator/
+│   ├── Dockerfile
+│   └── generate.py
+├── reporter/
+│   ├── Dockerfile
+│   ├── package.json
+│   └── report.js
 ├── run.sh
 ├── .gitignore
 └── README.md
