@@ -3,7 +3,7 @@
 Проект генерирует CSV с данными о мебели и строит HTML-отчёт через два Docker-контейнера.
 
 ## Структура
-
+```
 project/
 ├── data/          # сюда пишутся data.csv и report.html
 ├── local_data/    # для локальной отладки генератора
@@ -12,14 +12,14 @@ project/
 ├── run.sh
 ├── .gitignore
 └── README.md
-
+```
 ## Быстрый старт
-
+```
 ./run.sh build_generator
 ./run.sh run_generator
 ./run.sh build_reporter
 ./run.sh run_reporter
-
+```
 ## Все команды
 
 | Команда | Что делает |
@@ -42,16 +42,15 @@ project/
 
 1. Клонировать репозиторий в GitHub Codespaces
 2. В терминале выполнить по порядку:
-
+```
 ./run.sh build_generator
 ./run.sh run_generator
 ./run.sh build_reporter
 ./run.sh run_reporter
 ./run.sh report_server
-
+```
 3. В VS Code внизу открыть вкладку Ports
 4. Порт 8080, нажать Open in Browser
 5. В адресной строке браузера добавить в конец /report.html и нажать Enter
-
 
 Остановить сервер: docker stop report_nginx
